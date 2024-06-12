@@ -1,0 +1,22 @@
+{
+  "name": "simple-node-typescript-app",
+  "private": true,
+  "version": "0.0.0",
+  "author": "Eric Haynes",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "tsx src/binding-test.ts"
+  },
+  "dependencies": {
+    "@types/amqplib": "^0.10.5",
+    "amqplib": "^0.10.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "eslint-config-erich": "^2.1.0",
+    "tsx": "^4.15.2",
+    "typescript": "^5.2.2"
+  }
+}
