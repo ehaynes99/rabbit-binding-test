@@ -1,0 +1,17 @@
+name: example
+
+services:
+  rabbit:
+    container_name: example-rabbit
+    networks:
+      - examplenet 
+    image: rabbitmq:3-management
+    environment:
+      - RABBITMQ_DEFAULT_USER=example
+      - RABBITMQ_DEFAULT_PASS=example
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+
+networks:
+  examplenet:
